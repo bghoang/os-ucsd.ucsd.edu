@@ -60,9 +60,13 @@ const Officer = props => {
 
     return (
         <div className="officer-container">
-            <a href={link}>
-                <img src={image} className="officer-img" alt="officer" />
-            </a>
+            <div className="inner-container">
+                <a href={link}> <img src={image} className="officer-img" alt="officer" /> </a>
+                <div className="back">
+                    <p className="major">Computer Engineering </p>
+                    <p>4th year</p>
+                </div>
+            </div>
             <div className="officer-info">
                 <h2>{name}</h2>
                 <h4>{position}</h4>
